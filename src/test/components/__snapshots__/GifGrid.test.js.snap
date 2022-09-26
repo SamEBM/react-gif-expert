@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con Gif Grid Debe mostrar <GifGrid /> correctamente 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__backInLeft"
+  >
+    Attack on Titan
+  </h3>
+  <p
+    className="animate__animated animate__pulse"
+  >
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas con Gif Grid Debe mostrar gifs cuando termina useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__backInLeft"
+  >
+    Attack on Titan
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa1"
+      url="https://localhost/culaquier1.gif"
+    />
+    <GifItem
+      id="DEF"
+      key="DEF"
+      title="Cualquier cosa2"
+      url="https://localhost/culaquier2.gif"
+    />
+  </div>
+</Fragment>
+`;

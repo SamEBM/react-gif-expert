@@ -1,14 +1,18 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const GifItem = ({id, title, url}) => {
     return (
         <div className='card animate__animated animate__bounceIn'>
-            <img alt='gif' src={url}></img>
+            <img alt={title} src={url}></img>
             <p>{title}</p>
         </div>
     )
 }
 
-GifItem.propTypes = {}
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
 
 export default GifItem

@@ -8,8 +8,10 @@ const AddCategory = (props) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.addCategory(inputValue);
-        setInputValue('');
+        if (inputValue.length > 2) {
+            props.addCategory(inputValue);
+            setInputValue('');
+        }
     }
 
     return (

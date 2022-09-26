@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import AddCategory from './components/AddCategory';
 import GifGrid from './components/GifGrid';
 
-const GifExpertApp = () => {
+const GifExpertApp = ({defaultCategories = []}) => {
 
     // const categories = ['Naruto', 'Demon Slayer', 'Dragon Ball', 'Attack on Titan'];
-    const [categories, setCategories] = useState(['Rick And Morty']);
+    const [categories, setCategories] = useState(defaultCategories);
     const handleAdd = (category) => {
         // No se deben mutar las variables
         // categories.push('Categoria Nueva');
